@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Learn Data Structures</string>
+    <string name="io_exception_message">IO Exception has occurred: </string>
 </resources>
