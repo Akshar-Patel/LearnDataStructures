@@ -1,5 +1,7 @@
 package com.example.akshar.learndatastructures;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -7,6 +9,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class QuestionAnswerFragment extends Fragment {
@@ -23,6 +26,15 @@ public class QuestionAnswerFragment extends Fragment {
         questionTextView.setText(args.getString(ARG_QUESTION));
         TextView answerTextView = rootView.findViewById(R.id.text_view_answer);
         answerTextView.setText(args.getString(ARG_ANSWER));
+
+        RelativeLayout relativeLayout = rootView.findViewById(R.id.adLoc);
+        relativeLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://courses.learncodeonline.in/"));
+                startActivity(browserIntent);
+            }
+        });
         return rootView;
     }
 }

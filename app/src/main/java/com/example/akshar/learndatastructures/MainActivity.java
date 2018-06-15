@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         questionAnswerPagerAdapter.setData(data);
         viewPager.setAdapter(questionAnswerPagerAdapter);
         viewPager.addOnPageChangeListener(new QuestionAnswerOnPageChangeListener());
+
     }
 
     @Override
