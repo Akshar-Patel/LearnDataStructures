@@ -110,6 +110,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             Bundle args = new Bundle();
             // Our object is just an integer :-P
             args.putString(QuestionAnswerFragment.ARG_QUESTION, questionAnswerArrayList.get(position).getQuestion());
+            args.putString(QuestionAnswerFragment.ARG_ANSWER, questionAnswerArrayList.get(position).getAnswer());
             fragment.setArguments(args);
             return fragment;
         }
