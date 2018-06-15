@@ -15,6 +15,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.example.akshar.learndatastructures.api.APIHelper;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -113,6 +115,8 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             args.putString(QuestionAnswerFragment.ARG_QUESTION, questionAnswerArrayList.get(position).getQuestion());
             args.putString(QuestionAnswerFragment.ARG_ANSWER, questionAnswerArrayList.get(position).getAnswer());
             fragment.setArguments(args);
+
+
             return fragment;
         }
 
@@ -145,6 +149,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                     nextButton.setVisibility(View.VISIBLE);
                 }
             }
+
         }
 
         @Override
