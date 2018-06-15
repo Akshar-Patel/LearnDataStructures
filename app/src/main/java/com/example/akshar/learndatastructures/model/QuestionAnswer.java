@@ -1,11 +1,13 @@
-package com.example.akshar.learndatastructures;
+package com.example.akshar.learndatastructures.model;
 
 import com.squareup.moshi.Json;
 
 public class QuestionAnswer {
     @Json(name = "question")
+    private
     String question;
     @Json(name = "Answer")
+    private
     String answer;
 
     public String getQuestion() {

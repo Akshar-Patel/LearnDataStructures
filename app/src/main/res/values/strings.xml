@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Learn Data Structures</string>
     <string name="io_exception_message">IO Exception has occurred: </string>
+    <string name="always_show_answer">Always Show Answer</string>
+    <string name="show_answer">Show Answer</string>
+    <string name="learn_code_online_inc">Learn Code Online, INC</string>
+    <string name="previous_button_content_desc">Previous Button</string>
+    <string name="next_button_content_desc">Next Button</string>
+    <string name="learn_code_online_logo_content_desc">Learn Code Online Logo</string>
+    <string name="lco_tag_line"><![CDATA[Web development, Programming, iOS @amp; Android App development, Pentesting, Linux, NS3…]]></string>
 </resources>
